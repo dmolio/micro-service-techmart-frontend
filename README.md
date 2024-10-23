@@ -48,4 +48,8 @@ Vite for building
 Tailwind CSS for styling
 React Query for data fetching
 Zustand for state management
+<<<<<<< HEAD
 PayPal integration for payments
+=======
+PayPal integration for payments
+>>>>>>> 7c044380ab689026521db6480d2a730f8365ccad
