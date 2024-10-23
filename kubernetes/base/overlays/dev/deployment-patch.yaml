@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: techmart-frontend
+spec:
+  template:
+    spec:
+      containers:
+      - name: techmart-frontend
+        env:
+        - name: VITE_API_BASE_URL
+          value: "https://api-dev.techmart.com"
+        - name: VITE_PAYPAL_CLIENT_ID
+          valueFrom:
+            secretKeyRef:
+              name: paypal-credentials
+              key: client-id
